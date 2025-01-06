@@ -9,9 +9,13 @@ dotenv.config();
 const app = express();
 const PORT = 5000;
 
-// Enable CORS for all origins or specify allowed origins
+// Enable CORS for multiple origins (local and production)
 app.use(cors({
-  origin: 'https://kicks-brown.vercel.app',// Your React app's URL
+  origin: [
+    'http://localhost:5173', // Local development URL
+    'https://kicks-brown.vercel.app', // Vercel production URL
+  ],
+  methods: ['GET', 'POST'],
 }));
 
 // Middleware to parse JSON
@@ -30,6 +34,7 @@ app.post('/api/payment', async (req, res) => {
   const { token, amount } = req.body;
 
   try {
+    // Create a payment intent with the amount received from frontend
     const paymentIntent = await stripeInstance.paymentIntents.create({
       amount,
       currency: 'usd',
@@ -43,6 +48,7 @@ app.post('/api/payment', async (req, res) => {
       },
     });
 
+    // Respond with success if the payment is created
     res.json({ success: true, paymentIntent });
   } catch (err) {
     console.error('Error processing payment:', err);
