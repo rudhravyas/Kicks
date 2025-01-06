@@ -12,7 +12,8 @@ const PORT = 5000;
 // Enable CORS for multiple origins (local and production)
 app.use(cors({
   origin: [
-    '*' // Vercel production URL
+    'http://localhost:5173', // Local development URL
+    'https://kicks-brown.vercel.app', // Vercel production URL
   ],
   methods: ['GET', 'POST'],
 }));
