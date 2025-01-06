@@ -11,7 +11,7 @@ const PORT = 5000;
 
 // Enable CORS for all origins or specify allowed origins
 app.use(cors({
-  origin: 'http://localhost:5173', // Your React app's URL
+  origin: 'http://localhost:5173','https://kicks-brown.vercel.app/Payment' // Your React app's URL
 }));
 
 // Middleware to parse JSON
