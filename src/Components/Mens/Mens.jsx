@@ -119,7 +119,7 @@ function Mens() {
               Black
             </li>
             <li
-              onClick={() => setColor("white")}
+              onClick={() => setColor("White")}
               className={`my-3 text-xl cursor-pointer ${
                 color === "Blue" ? "text-blue-500" : "text-gray-600"
               }`}
