@@ -12,6 +12,7 @@ const PORT = 5000;
 // Enable CORS for multiple origins (local and production)
 app.use(cors({
   origin: [
+    'https://kicks-by-rv.netlify.app',
     'http://localhost:5173',  
   ],
   methods: ['GET', 'POST'],
