@@ -41,7 +41,7 @@ const CheckoutForm = () => {
       }
 
       // Send token and payment details to the backend
-      const response = await axios.post("http://localhost:5000/api/payment", {
+      const response = await axios.post("https://kicks-backend.vercel.app/api/payment", {
         token: token.id,
         amount: 5000, // Amount in cents, e.g., $50.00
       });
