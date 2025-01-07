@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from "../../Features/cartSlice";
 import { setProducts } from '../../Features/ProductsSlice';
 
-function Women() {
+function women() {
  
   const dispatch = useDispatch();
   const products = useSelector(state => state.products); 
@@ -237,4 +237,4 @@ function Women() {
   );
 }
 
-export default Women;
+export default women;

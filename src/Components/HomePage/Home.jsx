@@ -17,7 +17,7 @@ function HomePage() {
           <h1 className="text-4xl my-2">
             <b>Get Your Kicks.</b>
           </h1>
-          <Link to='/Mens'><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-full my-2 text-xl text-center"> 
+          <Link to='/men'><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-full my-2 text-xl text-center"> 
             Shop Now
           </button></Link>
         </div>
@@ -97,7 +97,7 @@ function HomePage() {
         <div className=" text-center"> 
             <p className="text-4xl my-4">Explore the collection now.</p>
             <p className="text-xl my-4">Get ready to put them on and <br></br>embark on the most amazing <br></br>journey ever.</p>
-            <Link to="/Mens"><button className="border-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-full my-2 text-xl text-center">Explore Now</button></Link>
+            <Link to="/men"><button className="border-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-full my-2 text-xl text-center">Explore Now</button></Link>
         </div>
       </div>
     </div>
